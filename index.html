@@ -6,20 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <img src="#" alt="logo">
+        <img src="images/wildcardLogo.jpeg" alt="logo">
         <nav>
-            <a href="#">Prijs</a>
-            <a href="#">Omschrijving</a>
-            <a href="#">Gerelateerde producten</a>
+            <a href="#mainProductInfo">Prijs</a>
+            <a href="#extraProductInfo">Omschrijving</a>
+            <a href="#relatedProducts">Gerelateerde producten</a>
         </nav>
     </header>
     <main>
         <!--Product-->
-        <section class="mainProductInfo">
+        <section class="mainProductInfo" id="mainProductInfo">
             <h1>Ark: survival evolved</h1>
             <section class="productSection">
                 <div class="img">
@@ -36,10 +39,11 @@
             </section>
         </section>
         <!--Product information-->
-        <section class="extraProductInfo">
+        <section class="extraProductInfo" id="extraProductInfo">
             <!--Good and bad points-->
             <section class="plusMin">
                 <h2>Plus- en minpunten</h2>
+                <h3> ✔ Voordelen</h3>
                 <ul>
                     <li>
                         Diversiteit aan Dinosaurussen en Wezens.
@@ -51,6 +55,7 @@
                         Uitdagende Overlevingsaspecten.
                     </li>
                 </ul>
+                <h3> ✘ Nadelen</h3>
                 <ul>
                     <li>
                         Grafische Prestatieproblemen.
@@ -81,27 +86,42 @@
             </section>
         </section>
         <!--Related products-->
-        <article>
+        <article class="relatedProducts" id="relatedProducts">
             <h2>Gerelateerde producten</h2>
-            <article>
-                <img src="#" alt="gerelateerd product">
-                <h3>Product</h3>
-                <p></p>
-            </article>
-            <article>
-                <img src="#" alt="gerelateerd product">
-                <h3>Product</h3>
-                <p></p>
-            </article>
-            <article>
-                <img src="#" alt="gerelateerd product">
-                <h3>Product</h3>
-                <p></p>
-            </article>
+            <div>
+                <article>
+                    <img src="images/arkAbb.png" alt="Ark abberation">
+                    <h3>Ark Abberation</h3>
+                    <p>Ark: Aberration is een uitbreidingspakket voor het populaire survival-videospel Ark: Survival
+                        Evolved. In deze uitbreiding worden spelers ondergedompeld in een nieuwe en mysterieuze
+                        ondergrondse
+                        wereld, waar de traditionele regels van overleven worden uitgedaagd.</p>
+                </article>
+                <article>
+                    <img src="images/arkExt.jpg" alt="Ark extinction">
+                    <h3>Ark Extinction</h3>
+                    <p>Ark: Extinction is een uitbreidingspakket voor het survival-videospel Ark: Survival Evolved. In
+                        deze
+                        uitbreiding worden spelers geconfronteerd met een post-apocalyptische wereld waarin de grens
+                        tussen
+                        technologie en natuur volledig is vervaagd.</p>
+                </article>
+                <article>
+                    <img src="images/arkGen.jpg" alt="Ark genesis">
+                    <h3>Ark Genesis</h3>
+                    <p>Ark: Genesis is een uitbreidingspakket voor het populaire survival-videospel Ark: Survival
+                        Evolved.
+                        Deze uitbreiding neemt spelers mee op een episch avontuur door verschillende biomechanische
+                        werelden, waarbij ze nieuwe wezens ontmoeten en uitdagingen overwinnen.</p>
+                </article>
+            </div>
         </article>
     </main>
     <footer>
-
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Cookie Policy</a>
+        <a href="#">Contact</a>
     </footer>
 </body>
 
